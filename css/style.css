@@ -1,5 +1,8 @@
 body {
-  margin: 0;
+  background-image: url("../svg/Jukebox.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @keyframes spin {
@@ -7,12 +10,13 @@ body {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
-#blue-bubble {
+#bubble1 {
   height: 100px;
-  animation: spin 3s linear infinite;
+  animation: spin 1s linear infinite;
+  position: absolute;
 }
 
 /*# sourceMappingURL=style.css.map */
