@@ -32,7 +32,7 @@ img {
   }
   75% {
     top: 30vh;
-    animation-timing-function: ease-in;
+    animation-timing-function: ease-out;
   }
   100% {
     top: 100vh;
@@ -52,7 +52,7 @@ img {
   }
   75% {
     transform: translateX(-365px);
-    animation-timing-function: ease-out;
+    animation-timing-function: ease-in;
   }
   100% {
     transform: translateX(-365px);
@@ -126,23 +126,31 @@ img {
   fill: #fff;
 }
 
+img:hover {
+  filter: brightness(110%);
+}
+
 img:hover ~ #bubble1 {
   animation: spin 10s linear infinite, yaxis 8s linear infinite, xaxis 8s linear infinite;
+  filter: brightness(150%);
 }
 
 img:hover ~ #bubble2 {
   animation: spin 10s linear infinite, yaxis 8s linear infinite, xaxis 8s linear infinite;
   animation-delay: 2s;
+  filter: brightness(150%);
 }
 
 img:hover ~ #bubble3 {
   animation: spin 10s linear infinite, yaxis 8s linear infinite, xaxis 8s linear infinite;
   animation-delay: 4s;
+  filter: brightness(150%);
 }
 
 img:hover ~ #bubble4 {
   animation: spin 10s linear infinite, yaxis 8s linear infinite, xaxis 8s linear infinite;
   animation-delay: 6s;
+  filter: brightness(150%);
 }
 
 #bottombox {

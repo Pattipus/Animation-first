@@ -19,7 +19,7 @@ img{
     0%{top: 100vh;}
     25%{top: 30vh; animation-timing-function: ease-out;}
     50%{top: 2vh; animation-timing-function: ease-in;}
-    75%{top: 30vh; animation-timing-function: ease-in;}
+    75%{top: 30vh; animation-timing-function: ease-out;}
     100% {top: 100vh;}
 }
 
@@ -27,7 +27,7 @@ img{
     0% {transform: translateX(0px);}
     25%{transform: translateX(0px);animation-timing-function: ease-in;}
     50%{transform: translateX(-183px);animation-timing-function: ease-out;}
-    75%{transform: translateX(-365px);animation-timing-function: ease-out;}
+    75%{transform: translateX(-365px);animation-timing-function: ease-in;}
     100%{transform: translateX(-365px);}
 }
 
@@ -67,23 +67,31 @@ img{
     .cls-1{opacity:0.8;}.cls-2{fill:#f39200;}.cls-3{fill:#fff;}
 }
 
+img:hover {
+    filter: brightness(110%);
+}
+
 img:hover ~ #bubble1 {
     animation: spin 10s linear infinite, yaxis 8s linear infinite, xaxis 8s linear infinite;
+    filter: brightness(150%);
 }
 
 img:hover ~ #bubble2 {
     animation: spin 10s linear infinite, yaxis 8s linear infinite, xaxis 8s linear infinite;
     animation-delay: 2s;
+    filter: brightness(150%);
 }
 
 img:hover ~ #bubble3 {
     animation: spin 10s linear infinite, yaxis 8s linear infinite, xaxis 8s linear infinite;
     animation-delay: 4s;
+    filter: brightness(150%);
 }
 
 img:hover ~ #bubble4 {
     animation: spin 10s linear infinite, yaxis 8s linear infinite, xaxis 8s linear infinite;
     animation-delay: 6s;
+    filter: brightness(150%);
 }
 
 #bottombox{
