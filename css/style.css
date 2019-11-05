@@ -5,7 +5,7 @@ body {
 
 img {
   height: 100vh;
-  z-index: 1;
+  z-index: 3;
   position: absolute;
   left: 35%;
 }
@@ -18,6 +18,50 @@ img {
     transform: rotate(360deg);
   }
 }
+@keyframes yaxis {
+  0% {
+    top: 100vh;
+  }
+  25% {
+    top: 30vh;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    top: 2vh;
+    animation-timing-function: ease-in;
+  }
+  75% {
+    top: 30vh;
+    animation-timing-function: ease-in;
+  }
+  100% {
+    top: 100vh;
+  }
+}
+@keyframes xaxis {
+  0% {
+    transform: translateX(0px);
+  }
+  25% {
+    transform: translateX(0px);
+    animation-timing-function: ease-in;
+  }
+  50% {
+    transform: translateX(-183px);
+    animation-timing-function: ease-out;
+  }
+  75% {
+    transform: translateX(-365px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateX(-365px);
+  }
+}
+/*@keyframes rotatingtest{
+    from {transform: rotate(0deg) translateX(50px) rotate(0deg);}
+    to {transform: rotate(-180deg) translateX(150px) rotate(180deg);}
+}*/
 @keyframes colorchange {
   0% {
     background: red;
@@ -116,7 +160,7 @@ img:hover ~ #bubble3 {
 }
 
 img:hover ~ #bubble4 {
-  animation: spin 10s linear infinite;
+  animation: spin 10s linear infinite, yaxis 5s linear infinite, xaxis 5s linear infinite;
 }
 
 /*# sourceMappingURL=style.css.map */
