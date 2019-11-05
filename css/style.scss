@@ -31,27 +31,12 @@ img{
     100%{transform: translateX(-365px);}
 }
 
-/*@keyframes rotatingtest{
-    from {transform: rotate(0deg) translateX(50px) rotate(0deg);}
-    to {transform: rotate(-180deg) translateX(150px) rotate(180deg);}
-}*/
-
-@keyframes colorchange
-    {
-      0%   {background: red;}
-      25%  {background: yellow;}
-      50%  {background: blue;}
-      75%  {background: green;}
-      100% {background: red;}
-    }
-
-
 #bubble1{
     height: 45px;
     position: absolute;
     z-index: 2;
-    left: 36.2%;
-    top: 60%;
+    left: 60.2%;
+    top: 100vh;
     .cls-1{opacity:0.8;}.cls-2{fill:#36a9e1;}.cls-3{fill:#fff;}
 }
 
@@ -59,8 +44,8 @@ img{
     height: 45px;
     z-index: 2;
     position: absolute;
-    left: 40%;
-    top: 9%;
+    left: 60.2%;
+    top: 100vh;
     .cls-1{opacity:0.8;}.cls-2{fill:#951b81;}.cls-3{fill:#fff;}
 }
 
@@ -68,8 +53,8 @@ img{
     height: 45px;
     z-index: 2;
     position: absolute;
-    left: 56.5%;
-    top: 9%;
+    left: 60.2%;
+    top: 100vh;
     .cls-1{opacity:0.8;}.cls-2{fill:#e6007e;}.cls-3{fill:#fff;}
 }
 
@@ -78,22 +63,34 @@ img{
     z-index: 2;
     position: absolute;
     left: 60.2%;
-    top: 60%;
+    top: 100vh;
     .cls-1{opacity:0.8;}.cls-2{fill:#f39200;}.cls-3{fill:#fff;}
 }
 
 img:hover ~ #bubble1 {
-    animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite, yaxis 8s linear infinite, xaxis 8s linear infinite;
 }
 
 img:hover ~ #bubble2 {
-    animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite, yaxis 8s linear infinite, xaxis 8s linear infinite;
+    animation-delay: 2s;
 }
 
 img:hover ~ #bubble3 {
-    animation: spin 10s linear infinite;
+    animation: spin 10s linear infinite, yaxis 8s linear infinite, xaxis 8s linear infinite;
+    animation-delay: 4s;
 }
 
 img:hover ~ #bubble4 {
-    animation: spin 10s linear infinite, yaxis 5s linear infinite, xaxis 5s linear infinite;
+    animation: spin 10s linear infinite, yaxis 8s linear infinite, xaxis 8s linear infinite;
+    animation-delay: 6s;
+}
+
+#bottombox{
+    height: 50px;
+    width: 100%;
+    z-index: 6;
+    background-color: lightgrey;
+    position: absolute;
+    top: 100vh;
 }
