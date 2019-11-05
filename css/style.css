@@ -2,4 +2,17 @@ body {
   margin: 0;
 }
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+#blue-bubble {
+  height: 100px;
+  animation: spin 3s linear infinite;
+}
+
 /*# sourceMappingURL=style.css.map */
